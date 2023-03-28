@@ -58,23 +58,12 @@ def RetrieveStudent(id):
 def update(id):
     student = StudentModel.query.filter_by(id=id).first()
 
-    #hobbies = student.hobbies.split(' ')
-    # print(hobbies)
+    
     if request.method == 'POST':
         if student:
             db.session.delete(student)
             db.session.commit()
-    #     tv = request.form['tv']    
-    #     if tv is None:
-    #               pass
-
-    #    # print('Form:' + str(request.form))    
-      
-    #     cricket = request.form['cricket']
-    #     movies = request.form['movies']
-    #     hobbies = tv + ' ' +  cricket + ' ' + movies
-    #     print('H' + hobbies)
-         
+   
         first_name = request.form['first_name']
         last_name = request.form['last_name']
         student_id = request.form['student_id']
