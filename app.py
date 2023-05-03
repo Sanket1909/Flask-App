@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from models import db, StudentModel
 from werkzeug.exceptions import abort
+import os
 
 
 app = Flask(__name__)
@@ -99,4 +100,6 @@ def delete(id):
     return render_template('delete.html')
 
 
-app.run(host='localhost', port=5000)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=os.environ.get('PORT', 5000))
