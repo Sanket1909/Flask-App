@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'sanketapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_25B284D1A96249E5AE7C8EBFEDA04FCC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6619A7BAC764D8CBC246B071CBF7A9D }}
