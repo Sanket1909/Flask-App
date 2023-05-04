@@ -1,150 +1,51 @@
-{% extends 'main.html' %} {% include 'header.html' %} {% block title %} Home {%
-endblock %} {% block body %}
-
+{% extends 'main.html' %}
+{% include 'header.html' %}
+ 
+ 
+ 
+{% block title %} Home {% endblock %}
+ 
+ 
+ 
+{% block body %}
 <div class="container">
-  <form action="" method="POST">
-    <table class="table">
-      <tr>
-        <td><label for="first_name" class="form-label">First Name:</label></td>
-        <td>
-          <input
-            type="text"
-            name="first_name"
-            class="form-control"
-            id="first_name"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td><label for="last_name" class="form-label">Last Name:</label></td>
-        <td>
-          <input
-            type="text"
-            name="last_name"
-            class="form-control"
-            id="last_name"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td><label for="student_id" class="form-label">Student ID:</label></td>
-        <td>
-          <input
-            type="text"
-            name="student_id"
-            class="form-control"
-            id="student_id"
-          />
-        </td>
-      </tr>
+<form action='' method = "POST">
+<table class="table">
+    <tr>
+        <td>First Name</td>
+        <td><input type = "text" name = "first_name" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type = "text" name = "last_name" class="form-control" /></td>
+    </tr>
 
-      <tr>
-        <td><label for="birthdate" class="form-label">Birth Date:</label></td>
-        <td>
-          <input
-            type="text"
-            name="birthdate"
-            class="form-control"
-            id="birthdate"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td><label for="ammount_due" class="form-label">Amount Due:</label></td>
-        <td>
-          <input
-            type="text"
-            name="ammount_due"
-            class="form-control"
-            id="ammount_due"
-          />
-        </td>
-      </tr>
+    <tr>
+        <td>Student ID</td>
+        <td><input type = "text" name = "student_id" class="form-control" /></td>
+    </tr>
 
-      <tr>
+    <tr>
+        <td>BirthDate</td>
+        <td><input type = "text" name = "birthdate" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>Ammount Due</td>
+        <td><input type = "text" name = "ammountdue" class="form-control" /></td>
+    </tr>
+
+
+   
+
+    <tr>
         <td colspan="2">
-          <button
-            type="submit"
-            name="submit"
-            class="btn btn-primary btn-lg mt-3"
-          >
-            Submit
-            <span
-              class="spinner-border spinner-border-sm ms-2 d-none"
-              role="status"
-            ></span>
-          </button>
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
         </td>
-      </tr>
-    </table>
+       
+    </tr>
+</table>
+  
   </form>
+
 </div>
 {% endblock %}
-<style>
-      .form-label {
-  font-size: 1.2rem;
-  font-weight: bold;
-  }
-
-  .form-control {
-  height: 50px;
-  font-size: 1.2rem;
-  }
-
-  .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  }
-
-  .btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
-  }
-
-  .btn-primary:focus {
-  box-shadow: none;
-  }
-
-  .spinner-border {
-  height: 1.5rem;
-  width: 1.5rem;
-  vertical-align: -0.25em;
-  }
-
-  .spinner-border-sm {
-  height: 1rem;
-  width: 1rem;
-  }
-
-  .btn-primary:active:focus,
-  .btn-primary.active:focus,
-  .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: none;
-  }
-
-  .btn-primary:active,
-  .btn-primary.active {
-  background-color: #0062cc;
-  border-color: #005cbf;
-  }
-
-  .btn-primary:active:hover,
-  .btn-primary.active:hover {
-  background-color: #005cbf;
-  border-color: #0056b8;
-  }
-
-  .btn-primary.disabled,
-  .btn-primary:disabled {
-  background-color: #007bff;
-  border-color: #007bff;
-  }
-
-  .btn-primary:not(:disabled):not(.disabled):active:focus,
-  .btn-primary:not(:disabled):not(.disabled).active:focus,
-  .show > .btn-primary:not(:disabled):not(.disabled).dropdown-toggle:focus {
-  box-shadow: none;
-  }
-
-  .btn-primary:not(:disabled):not(.disabled):active
-</style>
