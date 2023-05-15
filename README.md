@@ -20,3 +20,11 @@
  3.Click on the "Create New Record" button to add a new student record.
  4.Click on the "Edit" button next to a student record to update it.
  5.Click on the "Delete" button next to a student record to remove it from the database.
+ 
+## How to Run
+
+1. Clone the repository to your local machine.
+2. Open the command prompt or terminal and navigate to the project directory.
+3. Run pip install -r requirements.txt to install the required packages.
+4. Run python app.py to start the Flask application.
+5. Open a web browser and go to http://localhost:5000/ to access the application.
