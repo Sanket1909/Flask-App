@@ -12,6 +12,13 @@
  2.Navigate to the project directory: cd Flask-App
  3.Install the required dependencies: pip install -r requirements.txt
  4.Start the Flask development server: flask run
+ 
+## Installation
+
+1. Clone this repository: git clone https://github.com/Sanket1909/Flask-App
+2. Navigate to the project directory: cd Flask-App
+3. Install the required dependencies: pip install -r requirements.txt
+4. Start the Flask development server: flask run 
 
 ## Usage
 
@@ -21,10 +28,10 @@
  4.Click on the "Edit" button next to a student record to update it.
  5.Click on the "Delete" button next to a student record to remove it from the database.
  
-## How to Run
+## Installation
 
-1. Clone the repository to your local machine.
-2. Open the command prompt or terminal and navigate to the project directory.
-3. Run pip install -r requirements.txt to install the required packages.
-4. Run python app.py to start the Flask application.
-5. Open a web browser and go to http://localhost:5000/ to access the application.
+1. Clone this repository: git clone https://github.com/Sanket1909/Flask-App
+2. Navigate to the project directory: cd Flask-App
+3. Install the required dependencies: pip install -r requirements.txt
+4. Start the Flask development server: flask run
+
